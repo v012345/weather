@@ -6,7 +6,7 @@
 ## Installing
 
 ```shell
-$ composer require nightowl/weather -vvv
+$ composer require nightowl/weather
 ```
 
 ## Usage
@@ -26,6 +26,3 @@ _The code contribution process is not very formal. You just need to make sure th
 ## License
 
 MIT
-
-
-ba7231a3c245b91d4c89040e600e07fb
