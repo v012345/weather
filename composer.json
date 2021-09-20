@@ -1,0 +1,26 @@
+{
+    "name": "nightowl\/weather",
+    "description": "A weather SDK.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "v012345",
+            "email": "v138468@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nightowl\\Weather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nightowl\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
