@@ -46,7 +46,7 @@ class Weather
             $response = $this->getHttpClient()->get($url, [
                 'query' => $query,
             ])->getBody()->getContents();
-            return 'json' === $format ? json_encode($response, true) : $response;
+            return 'json' === $format ? \json_decode($response, true) : $response;
         } catch (\Exception $e) {
             //throw $th;
             throw new HttpException($e->getMessage(), $e->getCode(), $e);
